@@ -18,8 +18,8 @@ def hbnb():
 
 @app.route('/c/<text>', strict_slashes=False)
 def c_is_fun(text):
-    " Function to display 'C ' followed by the text variable  "
-    return 'C %s' %  text.replace('_', ' ')
+    """ Prints a Message when /c is called """
+    return "C " + text.replace('_', ' ')
 
 if __name__ == "__main__":
     app.run(host='1.0.0.0', port=5000)
