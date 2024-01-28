@@ -17,10 +17,9 @@ def hbnb():
     return 'HBNB'
 
 @app.route('/c/<text>', strict_slashes=False)
-def display_text(text):
-   " Function to display 'C ' followed by the text variable (replacing underscores with spaces) "
-   
-   return "C {}".format(text.replace("_", " "))
+def c_is_fun(text):
+    " Function to display 'C ' followed by the text variable  "
+    return "C " + text.replace('_', ' ')
 
 if __name__ == "__main__":
     app.run(host='1.0.0.0', port=5000)
